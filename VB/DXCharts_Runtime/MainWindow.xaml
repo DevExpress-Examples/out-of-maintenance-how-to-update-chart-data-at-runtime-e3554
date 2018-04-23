@@ -1,0 +1,3 @@
+﻿<Window x:Class="DXCharts_Runtime.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" Title="MainWindow" Height="516" Width="803" Loaded="Window_Loaded">
+    <Grid></Grid>
+</Window>
