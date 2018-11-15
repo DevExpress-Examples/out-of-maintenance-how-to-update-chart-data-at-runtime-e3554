@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml.cs](./CS/DXCharts_Runtime/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DXCharts_Runtime/MainWindow.xaml.vb))
+<!-- default file list end -->
 # How to update chart data at runtime
 
 
