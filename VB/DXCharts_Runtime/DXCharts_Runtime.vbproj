@@ -38,19 +38,19 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v13.1.Core">
+    <Reference Include="DevExpress.Charts.v11.2.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Data.v13.1">
+    <Reference Include="DevExpress.Data.v11.2">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Charts.v13.1">
+    <Reference Include="DevExpress.Xpf.Charts.v11.2">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Mvvm.v13.1">
+    <Reference Include="DevExpress.Xpf.Mvvm.v11.2">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v13.1">
+    <Reference Include="DevExpress.Xpf.Core.v11.2">
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
