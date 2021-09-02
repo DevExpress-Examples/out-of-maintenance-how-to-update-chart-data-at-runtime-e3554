@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Windows
 Imports System.Windows.Threading
 Imports DevExpress.Xpf.Charts
@@ -8,6 +7,7 @@ Namespace DXCharts_Runtime
 
 	Partial Public Class MainWindow
 		Inherits Window
+
 		Private rnd As Random
 		Private chart As ChartControl
 

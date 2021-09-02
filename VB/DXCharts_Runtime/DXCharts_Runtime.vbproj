@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,17 +7,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{BD4AC6AC-DD5F-49C7-9CD8-605C3097BD11}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>DXCharts_Runtime</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <BaseIntermediateOutputPath>obj.NetFX</BaseIntermediateOutputPath>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
-    <BaseIntermediateOutputPath>obj.NetFX</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -28,6 +27,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -37,44 +37,41 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v21.1.Core">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Data.v21.1">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Charts.v21.1">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Mvvm.v21.1">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v21.1.Core">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Office.v21.1.Core">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v21.1.Core">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v21.1.Export">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Printing.v21.1.Core">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.CodeView.v21.1">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Data.Desktop.v21.1">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v21.1">
-      <Private>True</Private>
-    </Reference>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Data" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.1.Core" />
+    <Reference Include="DevExpress.Data.v21.1" />
+    <Reference Include="DevExpress.Xpf.Charts.v21.1" />
+    <Reference Include="DevExpress.Mvvm.v21.1" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core" />
+    <Reference Include="DevExpress.Office.v21.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Export" />
+    <Reference Include="DevExpress.Printing.v21.1.Core" />
+    <Reference Include="DevExpress.Xpf.CodeView.v21.1" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1" />
+    <Reference Include="DevExpress.Xpf.Core.v21.1" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -122,12 +119,14 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My</CustomToolNamespace>
     </None>
     <AppDesigner Include="My Project\" />
   </ItemGroup>

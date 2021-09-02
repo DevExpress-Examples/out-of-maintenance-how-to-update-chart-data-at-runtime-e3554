@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 16
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXCharts_Runtime", "DXCharts_Runtime\DXCharts_Runtime.Net5.vbproj", "{BD4AC6AC-DD5F-49C7-9CD8-605C3097BD11}"
 EndProject
