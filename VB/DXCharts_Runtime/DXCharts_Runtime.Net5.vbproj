@@ -1,10 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>DXCharts_Runtime</AssemblyName>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
@@ -17,14 +19,13 @@
     <UseWPF>true</UseWPF>
     <Platforms>x86;AnyCPU</Platforms>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
-    <OptionExplicit>On</OptionExplicit>
-    <OptionCompare>Binary</OptionCompare>
-    <OptionStrict>Off</OptionStrict>
-    <OptionInfer>On</OptionInfer>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
   <ItemGroup>
-    <AppDesigner Include="My Project\" />
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DevExpress.Charts.Core" Version="22.2.*-*" />
